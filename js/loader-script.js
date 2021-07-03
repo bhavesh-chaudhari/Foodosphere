@@ -5,6 +5,7 @@ function preLoader() {
     const loader = document.querySelector(".loader");
     loader.className += " hidden";
     document.getElementById("body").style.overflow = "auto";
+    document.getElementById("body").style.overflowX = "hidden";
   }, 4000);
 }
 

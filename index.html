@@ -4,19 +4,54 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/loader-distortion-style.css" />
+    <link rel="shortcut icon" href="assets/images/fs.jpg" type="image/x-icon">
+    <!-- css Links -->
+    <link rel="stylesheet" href="css/loader-distortion-style.css" />
+    <link rel="stylesheet" href="css/navbar.css">
     <title>Foodosphere</title>
   </head>
   <body id="body">
+
+
     <!-- Pre Loader -->
     <div id="loader" class="loader">
       <div class="img-text">
-        <img src="/assets/images/fs.jpg" alt="" />
+        <img src="assets/images/fs.jpg" id="loaderImg" alt="" />
         <h2><span>F</span>oodo<span>S</span>phere</h2>
       </div>
     </div>
 
+    <!-- Navbar -->
+    <div class="navbar">
+      <nav>
+        <div class="logo">
+          <img src="assets/images/fs.jpg" alt="">
+          <h4>Foodosphere</h4>
+        </div>
+          <ul class="nav-links" >
+            <div id="img-container">
+
+            </div>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Subscribe</a></li>
+          <li><a href="#">Section 1</a></li>
+          <li><a href="#">Section 2</a></li>
+        </ul>
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </nav>
+    </div>
+
+    
+
     <!-- loader js -->
-    <script src="/js/loader-script.js"></script>
+    <script src="js/loader-script.js"></script>
+
+    <!-- navbar js -->
+    <script src="js/navbar.js"></script>
   </body>
 </html>
