@@ -68,6 +68,13 @@ ul{
     display: none;
 }
 
+
+.navbar{
+    position: relative;
+    overflow-x: hidden;
+    height: 100vh;
+}
+
 @media screen and (max-width:1100px){
     .nav-links{
         width: 70%;
@@ -76,9 +83,6 @@ ul{
 
 
 @media screen and (max-width:760px){
-    body{
-        overflow-x: hidden;
-    }
     .nav-links{
         position: absolute;
         right: 0px;
