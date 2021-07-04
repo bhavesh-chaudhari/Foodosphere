@@ -6,10 +6,7 @@ body{
     font-family:-apple-system, BlinkMacSystemFont, Glacial Indifference, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     overflow-x: hidden;
 }
-.recipe-section{
-    background-color: #F6FBFB;
-    display: flex;
-}
+/* header */
 header{
     background-color: #F6FBFB;
     display: flex;
@@ -67,6 +64,10 @@ input[type=text]{
     color: black;
 }
 /*recipes*/
+.recipe-section{
+    background-color: #F6FBFB;
+    display: flex;
+}
 .recipe-section h3{
     margin: 0px;
     font-size: 60px;
@@ -81,13 +82,11 @@ input[type=text]{
 .recipe-section h3{
     font-size: 50px;
     font-weight: 200;
-    /* margin: 0px; */
     margin-left: 100px;
 }
 .recipe-section p{
     margin-left: 100px;
     width: 450px;
-    /* margin-top: 8px; */
     margin-top: 17px;
     line-height: 160%;
     font-weight: 457;
@@ -133,7 +132,6 @@ button.explore-border{
     cursor: pointer;
     border-top:none;
     border-left: none;
-    /* z-index: 0; */
 }
 .recipe-section-image img{
     width: 700px;
@@ -153,7 +151,6 @@ button.explore-border{
     margin: 0px;
 }
 .country-search-written{
-    /* display: flex; */
     margin-left: 150px;
     padding-top: 60px;
 }
@@ -171,7 +168,6 @@ p.normal{
     display: flex;
 }
 button.explore-menu{
-    /* border: none; */
     padding: 12px 30px 12px 30px;
     background-color: #fba500;
     color: white;
@@ -237,7 +233,6 @@ p.dish-price{
 }
 /*nutrition*/
 .nutrition-written{
-    /* display: flex; */
     margin-left: 150px;
     margin-top: 100px;
     padding-top: 0px;
@@ -247,7 +242,6 @@ p.dish-price{
     margin-top: 10px;
 }
 button.find-recipes{
-    /* border: none; */
     padding: 12px 30px 12px 30px;
     background-color: #fba500;
     color: white;
@@ -343,7 +337,6 @@ button.beverage-recipes-border{
 }
 /*category-search*/
 .category-search-written{
-    /* display: flex; */
     margin-left: 150px;
     margin-top: 100px;
     padding-top: 0px;
@@ -353,7 +346,6 @@ button.beverage-recipes-border{
     margin-top: 50px;
 }
 button.category-search-recipes{
-    /* border: none; */
     padding: 12px 30px 12px 30px;
     background-color: #fba500;
     color: white;
