@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="assets/images/fs.jpg" type="image/x-icon" />
+    <!-- css Links -->
+    <link rel="stylesheet" href="css/website-colors.css" />
+    <link rel="stylesheet" href="css/loader-distortion-style.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/slider.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/menu-overlay.css" />
+    <link rel="stylesheet" href="css/autosearch.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/footer-style.css">
+    <title>Foodosphere</title>
+  </head>
+
+  <body id="body">
+    <!-- Pre Loader -->
+    <div id="loader" class="loader">
+      <div class="img-text">
+        <img src="assets/images/fs.jpg" id="loaderImg" alt="" />
+        <h2><span>F</span>oodo<span>S</span>phere</h2>
+      </div>
+    </div>
+
+    <!-- Navbar -->
+    <div id="navbar" class="navbar">
+      <nav>
+        <div class="logo">
+          <img src="assets/images/fs.jpg" alt="" />
+          <!-- <h4>Foodosphere</h4> -->
+        </div>
+        <ul class="nav-links">
+          <div id="img-container"></div>
+          <li><a href="#">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#recipe-heading">Recipe Search</a></li>
+          <li><a href="#nutrition-heading">Nutrition Search</a></li>
+          <li><a href="form.html">Subscribe</a></li>
+        </ul>
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Overlay -->
+    <i class="fas fa-times" id="close-overlay"></i>
+    <div class="menu-wrap">
+      <div id="menu" class="menu">
+        <div>
+          <div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slider -->
+    <div class="slider">
+      <div class="outerDiv">
+        <div id="innerDiv1" class="innerDiv1">
+          <h1>
+            Welcome to <br />
+            Foodosphere!
+          </h1>
+          <div class="slider-para">
+            <p>
+              Ultimate Destination for food <br />
+              lovers and enthusiasts.
+            </p>
+          </div>
+        </div>
+        <div id="innerDiv2" class="innerDiv2">
+          <img src="" id="innerDiv2Img" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <h1 id="recipe-heading" class="recipe-heading">Search any Recipe</h1>
+    <!-- <button id="menu-btn">Click Me</button> -->
+
+    <div class="searchbar">
+      <div class="auto-search">
+        <div class="recipe-search">
+          <input
+            id="recipe-search-input"
+            placeholder="Enter Ingredient(eg.egg, milk, butter,etc.)"
+            type="text"
+          />
+          <div id="recipe-search-icon">
+            <i class="fa fa-search" aria-hidden="true"></i>
+          </div>
+        </div>
+        <div id="match-list" class="match-list">
+          <!-- <li>lol</li>
+          <li>lol</li>
+          <li>lol</li>
+          <li>lol</li>
+          <li>lol</li>
+          <li>lol</li> -->
+          
+        </div>
+      </div>
+    </div>
+
+    <!-- Recipe Section -->
+    <div class="recipe-section">
+      <!-- <div class="recipe-search">
+      <input id="recipe-search-input" placeholder="Enter Ingredient(eg.egg, milk, butter,etc.)"  type="text"/>
+      <div id="recipe-search-icon" >
+      <i class="fa fa-search" aria-hidden="true"></i>
+      </div>
+    </div>
+    <div class="match-list">
+      Lorem ipsum dolor sit.
+    </div> -->
+      <div class="recipe-display">
+        <div id="main-recipe-display" class="main-recipe-display">
+          <div class="recipe-card">
+            <img src="https://source.unsplash.com/weekly?water" alt="" />
+            <h1 class="card-title">Recipe Name</h1>
+            <div class="recipe-info">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+              sunt alias tenetur commodi soluta dolorum, nesciunt vitae eaque
+              hic ab? Lorem ipsum dolor sit amet... consectetur adipisicing
+              elit. Inventore illum suscipit provident quo aliquid numquam enim
+              dolor expedita labore reprehenderit voluptates nisi, voluptate
+              culpa neque perferendis pariatur? Vitae, vero illo? Magni hic vero
+              cupiditate aliquam, autem nemo aperiam expedita veritatis numquam,
+              odit dolores repellendus accusamus non eligendi id error? Illum
+              eum molestiae quae sequi odit quo sapiente maxime porro! Voluptas.
+              Consectetur voluptate a repudiandae doloribus harum, et quaerat
+              error ipsa cumque, eum quisquam temporibus! Quo magni libero
+              molestiae aut. Cupiditate, sapiente quae. Placeat, accusamus
+              quidem molestias provident quibusdam eaque necessitatibus.
+              Corrupti adipisci omnis, itaque aliquid eos, autem assumenda
+              provident alias facilis odio quas explicabo. Sequi, ullam modi nam
+              earum ratione quis, quas sapiente tempora blanditiis aperiam,
+              reprehenderit ipsum. Debitis, magni!
+            </div>
+
+            <div class="area-tags">
+              <span class="area"
+                ><span id="area-text">Area</span>: Lorem ipsum dolor sit.</span
+              >
+              <span class="tags"
+                ><span id="tags-text">Tags</span> : Lorem ipsum dolor sit.</span
+              >
+            </div>
+            <div class="card-btn">
+              <button>Read More...</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h1 id="nutrition-heading" class="nutrition-heading">
+      Search for Food Nutrition
+    </h1>
+
+    <div class="searchbar">
+      <div class="nutrition-search">
+        <form>
+          <input
+            id="nutrition-search-input"
+            placeholder="Enter Meal Ingredient..."
+            type="text"
+          />
+        </form>
+        <div id="nutrition-search-icon">
+          <i class="fa fa-search" aria-hidden="true"></i>
+        </div>
+      </div>
+    </div>
+    <!-- Nutritional -->
+    <div class="nutrition-section">
+      <div class="nutrition-display">
+        <div class="main-nutrition-display" id="main-nutrition-display">
+          <div class="nutrition-card">
+            <img src="https://source.unsplash.com/weekly?water" alt="" />
+            <h1 class="card-title">Recipe Name</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Footer -->
+     <footer class="footer-area">
+        <div class="footer-wave-box">
+            <div class="footer-wave footer-animation"></div>
+        </div>
+        <div class="main">
+            <!-- <div class="footer">
+                <div class="single-footer">
+                    <h4>about us</h4>
+                    <p>Lorem ipsum dolor sit amet, di dunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Excepteur sint qui officia deserunt Excepteur.</p>
+                    <div class="footer-social">
+                        <a href=""><i class="fab fa-facebook-f"></i></a>
+                        <a href=""><i class="fab fa-twitter"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="single-footer">
+                    <h4>main menu</h4>
+                    <ul>
+                        <li><a href=""><i class="fas fa-chevron-right"></i> home</a></li>
+                        <li><a href=""><i class="fas fa-chevron-right"></i> about us</a></li>
+                        <li><a href=""><i class="fas fa-chevron-right"></i> services</a></li>
+                        <li><a href=""><i class="fas fa-chevron-right"></i> gallery</a></li>
+                        <li><a href=""><i class="fas fa-chevron-right"></i> contact us</a></li>
+                    </ul>
+                </div>
+                <div class="single-footer">
+                    <h4>quick links</h4>
+                    <ul>
+                        <li><a href=""><i class="fas fa-chevron-right"></i> privacy policy</a></li>
+                        <li><a href=""><i class="fas fa-chevron-right"></i> terms & conditions</a></li>
+                        <li><a href=""><i class="fas fa-chevron-right"></i> disclaimer</a></li>
+                    </ul>
+                </div>
+                <div class="single-footer">
+                    <h4>contact us</h4>
+                    <ul>
+                        <li><a href=""><i class="fas fa-map-marker-alt"></i> North Street, Sydney, Australia</a></li>
+                        <li><a href=""><i class="fas fa-mobile-alt"></i> +88 0123 456 789</a></li>
+                        <li><a href=""><i class="far fa-envelope"></i> info@demo.com</a></li>
+                        <li><a href=""><i class="fas fa-globe-europe"></i> www.demo.com</a></li>
+                    </ul>
+                </div>
+            </div> -->
+            <div class="footer-heading">
+              <span>F</span>oodo<span>S</span>phere
+            </div>
+            <div class="copy">
+                <p>&copy; 2020 all rights reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- loader js -->
+    <script src="js/loader-script.js"></script>
+
+    <!-- navbar js -->
+    <script src="js/navbar.js"></script>
+
+    <!-- slider js -->
+    <script src="js/slider.js"></script>
+
+    <!-- Fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/8d2efa2f82.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- overlay js -->
+    <script src="js/menu-overlay.js"></script>
+
+    <!-- landing page js -->
+    <script src="js/script.js"></script>
+  </body>
+</html>

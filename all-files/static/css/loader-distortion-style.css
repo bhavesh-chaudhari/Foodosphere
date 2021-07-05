@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #fff;
+}
+
+.loader {
+  background: white;
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.loader.hidden {
+  animation: fadeOut 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeOut {
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+h2 {
+  position: relative;
+  margin: 1.25rem 0px 0;
+  font-size: 4rem;
+  font-weight: 900;
+  color: black;
+  z-index: 1;
+  overflow: hidden;
+  letter-spacing: 2px;
+}
+
+h2::before {
+  content: "";
+  position: absolute;
+  left: 110%;
+  width: 120%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent 0%, #fff 5%, #fff 100%);
+  animation: distort 3s linear forwards;
+}
+
+@keyframes distort {
+  0% {
+    left: -20%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+h2 span {
+  color: #FBA500;
+}
+
+.img-text {
+  text-align: center;
+  width: 100%;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  height: 16em;
+  width: 16rem;
+}
+
+#loaderImg{
+  animation: logo 3s ease-in;
+}
+
+@keyframes logo {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  h2 {
+    font-size: 3rem;
+  }
+}
