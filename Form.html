@@ -3,18 +3,44 @@
 <html lang="en" dir="ltr">
    <head>
       <meta charset="utf-8">
-      <title>Login and Registration Form in HTML</title>
-      <link rel="stylesheet" href="style.css">
+      <title>Login and Registration Form</title>
+      <link rel="stylesheet" href="css/form.css">
+      <link rel="stylesheet" href="css/navbar.css">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
    </head>
    <body>
+
+    <div id="navbar" class="navbar">
+    <nav>
+      <div class="logo">
+        <img src="assets/images/fs.jpg" alt="">
+        <!-- <h4>Foodosphere</h4> -->
+      </div>
+      <ul class="nav-links">
+        <div id="img-container">
+
+        </div>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="index.html#recipe-heading">Recipe Search</a></li>
+        <li><a href="index.html#nutrition-heading">Nutrition Search</a></li>
+        <li><a href="#">Subscribe</a></li>
+      </ul>
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
+  </div>
+
       <div class="wrapper">
          <div class="title-text">
             <div class="title login">
-               Login Form
+               Subscribe Now
             </div>
             <div class="title signup">
-               Signup Form
+               Customize Experience
             </div>
          </div>
          <div class="form-container">
@@ -81,5 +107,7 @@
            return false;
          });
       </script>
+
+      <script src="js/navbar.js"></script>
    </body>
 </html>
