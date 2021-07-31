@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: block;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 8vh;
+    background-color: #FBA500;
+    overflow: hidden;
+}
+
+.logo{
+    color: rgb(255, 245, 245);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+}
+
+.logo img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.nav-links a{
+    color: rgb(255, 245, 245);
+    padding: 6px;
+    border-radius: 2px;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+
+
+.nav-links li:hover{
+    border-bottom: 2px #ffe5b4 solid;
+    transition: box-shadow 0.5s;
+    box-shadow: 0px 0px 5px #FFF;
+}
+
+.burger{
+    display: none;
+    cursor: pointer;
+}
+
+.burger div{
+    width: 25px;
+    height: 3px;
+    background:rgb(255, 245, 245);
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+#img-container{
+    display: none;
+}
+
+body{
+    position: relative;
+    overflow-x: hidden;
+}
+
+@media screen and (max-width:1100px){
+    .nav-links{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:760px){
+    .nav-links{
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: #FBA500;
+        z-index: 99;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+    }
+    .nav-links li{
+        opacity: 0;
+    }
+    .burger{
+        display: inline;
+    }
+    #nav-image{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    animation: showLogo 2s ease-out;
+    }
+    #img-container{
+    display: block;
+    width: 100%;
+    height: 150px;
+    background: #fff;
+    opacity: 1;
+    }
+}
+
+@keyframes showLogo {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+.hideLogo{
+    opacity: 0;
+    animation: moveLogo 0.5s ease-in;
+    
+}
+
+@keyframes moveLogo {
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+.nav-active{
+    transform: translateX(0%);
+}
+
+@keyframes navLinksFade {
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+
+.toggle .line2{
+    opacity: 0;
+}
+
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px,-6px);
+}

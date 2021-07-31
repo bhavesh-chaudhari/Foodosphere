@@ -1,0 +1,143 @@
+.menu-wrap{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.menu-wrap .menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-wrap .menu > div{
+    position: relative;
+    margin-top: 3.125rem;
+    background: #FBA500;
+    border-radius: 50%;
+    width: 200vw;
+    height: 200vw;
+    display: flex;
+    flex: none;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0);
+    transition: all 2s ease;
+}
+
+.menu-wrap .menu > div > div{
+    /* margin-top: 5.1rem; */
+    text-align: center;
+    max-width: 90vw;
+    /* max-height: 100vw; */
+    height: 600px;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    /* padding: 2rem; */
+    /* overflow: auto; */
+}
+
+.fa-times{
+    position: fixed;
+    top: 4.2rem;
+    right: 1.25rem;
+    z-index: 2000;
+    opacity: 0;
+    color: red;
+    transition: opacity 2s ease;
+    font-size: 1.6rem;
+}
+
+.fa-times:hover{
+    transform: rotateZ(360deg) scale(1.5);
+    transition: transform 1s;
+    cursor: pointer;
+}
+
+.overlay-heading{
+    color: 	#1DA1F2;
+    letter-spacing: 3px;
+    text-decoration: underline #fff;
+    text-transform: uppercase;
+}
+
+.overlay-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.overlay-image-recipe{
+    display: flex;
+    padding: 10px;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.5rem;
+    letter-spacing: 2px;
+    width: 100%;
+}
+
+.overlay-measures-ing{
+    display: flex;
+    padding: 10px;
+    margin: 10px;
+    justify-content: center;
+    align-items: stretch;
+    line-height: 1.5rem;
+    letter-spacing: 2px;
+}
+
+.overlay-image{
+    width: 50%;
+}
+
+.overlay-image img{
+    border-radius: 10px;
+}
+
+.overlay-recipe{
+    width: 50%;
+}
+
+.overlay-recipe p{
+    text-align: start;
+}
+
+.overlay-recipe span{
+    color: aliceblue;
+    font-size: 2rem;
+    text-decoration: underline #1DA1F2;
+}
+
+.overlay-measures span{
+    color: aliceblue;
+    font-size: 2rem;
+    text-decoration: underline #1DA1F2;
+}
+
+.overlay-ing span{
+    color: aliceblue;
+    font-size: 2rem;
+    text-decoration: underline #1DA1F2;
+}
+
+.overlay-measures{
+    width: 50%;
+}
+
+.overlay-ing{
+    width: 50%;
+}
+
+.overlay-measures p{
+    text-align: start;
+    margin-top: 1rem;
+}
